@@ -14,6 +14,22 @@
 const outputTag = document.getElementById('output');
 
 
-const kilometri = prompt('Inserire il numero di kilometri che vuole percorre');
+let distance = prompt('Inserire il numero di kilometri che vuole percorre');
 
-console.log(kilometri);
+console.log(distance);
+
+const age = prompt('Inserire la propria età');
+
+console.log(age);
+
+let price = (age * 0.21)
+
+const discount = price
+  
+  if (age < 18) {
+    System.out.println('The price is' + '' +(price / 5))
+  }
+
+console.log(price);
+
+document.getElementById('output').innerHTML = distance + age;

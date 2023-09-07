@@ -10,3 +10,10 @@
     -va applicato uno sconto del 40% per gli over 65.
 
 */
+
+const outputTag = document.getElementById('output');
+
+
+const kilometri = prompt('Inserire il numero di kilometri che vuole percorre');
+
+console.log(kilometri);

@@ -22,14 +22,23 @@ const age = prompt('Inserire la propria età');
 
 console.log(age);
 
-let price = (age * 0.21)
-
-const discount = price
-  
-  if (age < 18) {
-    System.out.println('The price is' + '' +(price / 5))
-  }
+let price = (distance * 0.21)
 
 console.log(price);
 
-document.getElementById('output').innerHTML = distance + age;
+
+  if (age < 18) {
+    console.log('The price is' + '' + parseFloat((Math.ceil(price / 100 * 80))).toFixed(2));
+  }
+  
+  else if (age > 65) {
+    console.log('The price is' + '' + (Math.ceil(price / 100 * 60)));
+  }
+
+  else if (age) {
+    console.log('The price is' + ' ' + price );
+  }
+
+
+// DEBUG
+document.getElementById('output').innerHTML = 'The ticket price is' + ' ' + price;

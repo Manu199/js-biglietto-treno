@@ -28,7 +28,7 @@ console.log(price);
 
 
   if (age < 18) {
-    price = ((price / 100 * 60).toFixed(2) );
+    price = ((price / 100 * 80).toFixed(2) );
   }
   
   else if (age > 65) {
@@ -36,7 +36,7 @@ console.log(price);
   }
 
   else if (age) {
-    price = ( (price / 100 * 60).toFixed(2) );
+    price = ((price).toFixed(2) );
   }
  
   console.log(price);

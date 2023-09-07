@@ -28,17 +28,18 @@ console.log(price);
 
 
   if (age < 18) {
-    console.log('The price is' + ' ' + parseFloat((Math.round(price / 100 * 80))).toFixed(2) );
+    price = ((price / 100 * 60).toFixed(2) );
   }
   
   else if (age > 65) {
-    console.log('The price is' + ' ' + parseFloat((Math.round(price / 100 * 60))).toFixed(2) );
+    price = ((price / 100 * 60).toFixed(2) );
   }
 
   else if (age) {
-    console.log('The price is' + ' ' + parseFloat((Math.round (price))).toFixed(2) );
+    price = ( (price / 100 * 60).toFixed(2) );
   }
-
+ 
+  console.log(price);
 
 // DEBUG
-document.getElementById('output').innerHTML = 'The ticket price is' + '  ' + price;
+document.getElementById('output').innerHTML = 'The ticket price is' + '  ' + price + '&euro;';
